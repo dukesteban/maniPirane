@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Maní Pirané - Sobre Nosotros</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom --> 
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <!----- icono para apple y safari --> 
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" /> 
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- iconos  -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+        <!-- tipo de letra -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+        <!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+    <!-- Header 
+	nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+	o a otros documentos
+	-->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-light shadow py-0">
+	
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+        navbar-light = texto negro de la letra
+        bg-white = fondo de color blanco
+        -->
+    
+            <div class="container d-flex justify-content-between align-items-center">
+            
+                <a class="navbar-brand h1  mb-0 ml-2" href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
+                <img src="./assets/img/icono.png" height="45" alt="Card image">
+                    <!--<i class='bx bxs-store-alt bx-sm text-dark'></i>
+                    bx bx-buildings = icono del logo de la web: 
+                    http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+                    https://boxicons.com/
+                    -->
+    
+               <span class="text-black h4">Maní-</span><span class="text-muted h4">Pirané</span></a>
+                
+                <!--	boton de hamburguesa --> 
+                    <button class="navbar-toggler border-2" 
+                    type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbar-toggler-success" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
+            id="navbar-toggler-success">
+            
+            <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+            por un punto de interrupción principal.
+            flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+            d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+            directos en elementos flexibles
+            -->
+                            <div class="flex-fill mx-xl-5 mb-2">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                            <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-light">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+                           (incluida la compatibilidad con menús desplegables).-->
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-dark rounded-pill px-2" href="index.html">Home</a>
+                            <!-- px = padding y mx es el margin 
+                            rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn-outline-dark rounded-pill px-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="pricing.html#section-variedad-de-mani">Variedad Maní</a></li>
+                                  <li><a class="dropdown-item" href="pricing.html#section-frutos-secos">Frutos Secos</a></li>
+                                  <li><a class="dropdown-item" href="pricing.html#section-snacks">Snacks</a></li>
+                                  <li><a class="dropdown-item" href="pricing.html#section-semillas">Semillas</a></li>
+                                  <li><a class="dropdown-item" href="pricing.html#section-harinas">Harinas</a></li>
+                                </ul>
+                              </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-dark rounded-pill px-2" href="pricing.html">Precios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-dark rounded-pill px-2" href="work.html">Clientes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-dark rounded-pill px-2" href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-dark rounded-pill px-2" href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    <!---------------------------------------------------------Fin de las opciones del menu
+    ------------------------------------------------------------ Inicio de los iconos del menu-->
+                    <div class="navbar align-self-center d-flex">
+                        <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-dark'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bxs-cart bx-sm text-dark'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bx-user bx-sm text-dark'></i></a>
+                        <!--	https://iconify.design/icon-sets/bx/-->
+                    </div>
+                </div>
+            </div>
+    </nav>
+        <!----------------------------------------------------------- Fin de los iconos del menu y Nav-->
+    <!-- Close Header -->
+
+    <!-- Start Banner Hero -->
+    <section class="bg-light w-100 semi-bold-600">
+        <div class="container">
+            <div class="row d-flex align-items-center py-5">
+                <div class="col-lg-6 text-start">
+                    <h1 class="h2 py-5 text-black typo-space-line">Sobre Nosotros</h1>
+                    <p class="light-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laboriosam quis mollitia voluptatibus. Impedit, nam!
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="container-iframe">
+                        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/Yxrxx5IZWdI" title="Los principales países productores de MANÍ en el MUNDO" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Hero -->
+
+    <!-- Start Team Member -->
+    <section class="container py-2 semi-bold-600">
+        <div class="pt-5 pb-3 d-lg-flex align-items-center gx-5">
+
+            <div class="col-lg-3">
+                <h2 class="h2 py-5 typo-space-line">Nuestro Equipo</h2>
+                <p class="text-muted light-300">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+
+            <div class="col-lg-9 row">
+                <div class="team-member col-md-4">
+                    <img class="team-member-img img-fluid rounded-circle p-4" src="./assets/img/team-01.jpg" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Ana Cabrera</li>
+                        <li>Gerente de Ventas</li>
+                    </ul>
+                </div>
+                <div class="team-member col-md-4">
+                    <img class="team-member-img img-fluid rounded-circle p-4" src="./assets/img/team-02.jpg" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Juana Peréz</li>
+                        <li>Gerente de Depósito</li>
+                    </ul>
+                </div>
+                <div class="team-member col-md-4">
+                    <img class="team-member-img img-fluid rounded-circle p-4" src="./assets/img/team-03.jpg" alt="Card image">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>Roberto Martin</li>
+                        <li>Gerente de Envíos</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Team Member -->
+
+    <!-- Start Progress -->
+    <section class="bg-white py-5 semi-bold-600">
+        <div class="container my-4">
+
+            <h1 class="creative-heading h2 pb-3 semi-bold-600">Apostamos al comercio local</h1>
+
+            <div class="creative-content row py-3">
+                <div class="col-md-5">
+                    <p class="text-muted col-lg-8 light-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida Risus.
+                    </p>
+                </div>
+                <div class="creative-progress col-md-7">
+
+                    <div class="row mt-4 mt-sm-2">
+                        <div class="col-6">
+                            <h4 class="h5">Producción propia</h4>
+                        </div>
+                        <div class="col-6 text-right">50%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar-striped bg-warning" role="progressbar" style="width: 50%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <div class="row mt-4 mt-sm-2">
+                        <div class="col-6">
+                            <h4 class="h5">Productores Locales</h4>
+                        </div>
+                        <div class="col-6 text-right">30%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar-striped bg-warning" role="progressbar" style="width: 30%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+
+                    <div class="row mt-4 mt-sm-2">
+                        <div class="col-6">
+                            <h4 class="h5">Importado</h4>
+                        </div>
+                        <div class="col-6 text-right">20%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar-striped bg-warning" role="progressbar" style="width: 20%" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Progress -->
+
+    <!-- Start Our Importers -->
+    <section class="bg-light py-3">
+        <div class="container py-4 shadow">
+            <h2 class="h2 text-dark text-center py-3 semi-bold-600">Nuestros Importadores</h2>
+            <div class="row text-center">
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="/assets/img/importer-01.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title regular-400">Primera Empresa</h5>
+                          <p class="card-text light-300 text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-outline-dark">Ir a su Sitio Web</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="/assets/img/importer-02.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title regular-400">Segunda Empresa</h5>
+                          <p class="card-text light-300 text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-outline-dark">Ir a su Sitio Web</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="/assets/img/importer-03.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title regular-400">Tercera Empresa</h5>
+                          <p class="card-text light-300 text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-outline-dark">Ir a su Sitio Web</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="/assets/img/importer-04.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title regular-400">Cuarta Empresa</h5>
+                          <p class="card-text light-300 text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-outline-dark">Ir a su Sitio Web</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Our Importers-->
+
+    <!-- Start Choice -->
+    <section class="why-us banner-bg bg-light semi-bold-600">
+        <div class="container my-4">
+            <div class="row">
+                <div class="banner-img col-lg-5">
+                    <img src="./assets/img/banner-img-02.svg" class="rounded img-fluid" alt="">
+                </div>
+                <div class="banner-content col-lg-7 align-self-end">
+                    <h2 class="h2 pb-3">¿Porqué Elegirnos?</h2>
+                    <p class="text-muted pb-5 light-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus tempore similique qui in, cupiditate quia quisquam officia nostrum?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Choice -->
+
+    <!-- Start Aim -->
+    <section class="banner-bg bg-white py-5 semi-bold-600">
+        <div class="container my-4">
+            <div class="row text-center">
+
+                <div class="objective col-lg-4">
+                    <div class="objective-icon card m-auto py-4 mb-2 mb-sm-4 bg-dark shadow-lg">
+                        <i class="display-4 bx bxs-bulb text-light"></i>
+                    </div>
+                    <h2 class="objective-heading h3 mb-2 mb-sm-4 light-300">Nuestra Vision</h2>
+                    <p class="light-300">
+                        Incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse commodo viverra.
+                    </p>
+                </div>
+
+                <div class="objective col-lg-4 mt-sm-0 mt-4">
+                    <div class="objective-icon card m-auto py-4 mb-2 mb-sm-4 bg-dark shadow-lg">
+                        <i class='display-4 bx bx-revision text-light'></i>
+                    </div>
+                    <h2 class="objective-heading h3 mb-2 mb-sm-4 light-300">Nuestra Misión</h2>
+                    <p class="light-300">
+                        Eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam quis.
+                    </p>
+                </div>
+
+                <div class="objective col-lg-4 mt-sm-0 mt-4">
+                    <div class="objective-icon card m-auto py-4 mb-2 mb-sm-4 bg-dark shadow-lg">
+                        <i class="display-4 bx bxs-select-multiple text-light"></i>
+                    </div>
+                    <h2 class="objective-heading h3 mb-2 mb-sm-4 light-300">Nuestra Pasión</h2>
+                    <p class="light-300">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Aim -->
+
+    <!-- Start Contact -->
+    <section class="banner-bg bg-light py-5 semi-bold-600">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto my-4 p-3">
+                    <form action="#" method="get"><h1 class="h2 text-center">Suscribite a nuestras novedades</h1>
+                    <div class="input-group py-3">
+                    
+                        <input name="email" type="mail" class="form-control form-control-lg rounded-pill rounded-end" id="email" placeholder="Tu Email" aria-label="Tu Email" required>
+                        <button class="btn btn-dark text-white btn-lg rounded-pill rounded-start px-lg-4" type="submit">Suscribirte</button>
+                    </div>
+                    <p class="text-center light-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Start Wapp Btn -->
+    <div class="btn-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=543816428818&text=Hola,%20me%20pasas%20lista%20de%20precios?" target="_blank">
+        <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
+        </a>
+    </div>
+    <!-- End Wapp Btn -->
+
+    <!-- Start Footer -->
+    <footer class="bg-light pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/img/icono.png" height="40" alt="Card image">
+                        <span class="text-muted h5">Maní-</span><span class="text-muted h5 semi-bold-600">Pirané</span>
+                    </a>
+                    <p class="text-muted my-lg-4 my-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut.
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-muted" target="_blank" href="https://www.youtube.com/">
+                                <i class='bx bxl-youtube bx-md' ></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-muted" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-circle bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-muted" target="_blank" href="https://www.instagram.com/manipirane/">
+                                <i class='bx bxl-instagram-alt bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-muted" target="_blank" href="https://www.linkedin.com/">
+                                <i class='bx bxl-linkedin bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-muted" target="_blank" href="https://api.whatsapp.com/send?phone=543816428818&text=Hola,%20me%20pasas%20lista%20de%20precios?">
+                                <i class='bx bxl-whatsapp bx-md'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-muted light-300">Mapa del Sitio</h2>
+                        <ul class="list-unstyled text-muted light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted" 
+								href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-muted py-1" 
+								href="pricing.html">Precios</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+								href="work.html">Clientes</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+								href="about.html">Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+								href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-muted light-300">Productos</h2>
+                    <ul class="list-unstyled text-muted light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+							href="pricing.html#section-variedad-de-mani">Variedad Maní</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+							href="pricing.html#section-frutos-secos">Frutos Secos</a>
+                        <li class="pb-2">       
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+							href="pricing.html#section-snacks">Snacks</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+							href="pricing.html#section-semillas">Semillas</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+							href="pricing.html#section-harinas">Harinas</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-muted light-300">Comunicate</h2>
+                    <ul class="list-unstyled text-muted light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+							href="tel:+54-3815512745">+54-3815512745</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-muted py-1"
+							href="mailto:info@company.com">manipirane@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-light py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-muted light-300">
+                            © Copyright 2021 Maní-Pirané. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-muted light-300">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-muted" 
+							href="#" target="_blank"><strong>Esteban Agüero</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

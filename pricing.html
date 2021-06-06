@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Maní Pirané - Precios</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom --> 
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <!----- icono para apple y safari --> 
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" /> 
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- iconos  -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+        <!-- tipo de letra -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+        <!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+    <!-- Header 
+	nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+	o a otros documentos
+	-->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-light shadow py-0">
+	
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+        navbar-light = texto negro de la letra
+        bg-white = fondo de color blanco
+        -->
+    
+            <div class="container d-flex justify-content-between align-items-center">
+            
+                <a class="navbar-brand h1  mb-0 ml-2" href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
+                <img src="./assets/img/icono.png" height="45" alt="Card image">
+                    <!--<i class='bx bxs-store-alt bx-sm text-dark'></i>
+                    bx bx-buildings = icono del logo de la web: 
+                    http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+                    https://boxicons.com/
+                    -->
+    
+               <span class="text-black h4">Maní-</span><span class="text-muted h4">Pirané</span></a>
+                
+                <!--	boton de hamburguesa --> 
+                    <button class="navbar-toggler border-2" 
+                    type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbar-toggler-success" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
+            id="navbar-toggler-success">
+            
+            <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+            por un punto de interrupción principal.
+            flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+            d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+            directos en elementos flexibles
+            -->
+                            <div class="flex-fill mx-xl-5 mb-2">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                            <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-light">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+                           (incluida la compatibilidad con menús desplegables).-->
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-dark rounded-pill px-2" href="index.html">Home</a>
+                            <!-- px = padding y mx es el margin 
+                            rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn-outline-dark rounded-pill px-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="pricing.html#section-variedad-de-mani">Variedad Maní</a></li>
+                                  <li><a class="dropdown-item" href="pricing.html#section-frutos-secos">Frutos Secos</a></li>
+                                  <li><a class="dropdown-item" href="pricing.html#section-snacks">Snacks</a></li>
+                                  <li><a class="dropdown-item" href="pricing.html#section-semillas">Semillas</a></li>
+                                  <li><a class="dropdown-item" href="pricing.html#section-harinas">Harinas</a></li>
+                                </ul>
+                              </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-dark rounded-pill px-2" href="pricing.html">Precios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-dark rounded-pill px-2" href="work.html">Clientes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-dark rounded-pill px-2" href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-dark rounded-pill px-2" href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    <!---------------------------------------------------------Fin de las opciones del menu
+    ------------------------------------------------------------ Inicio de los iconos del menu-->
+                    <div class="navbar align-self-center d-flex">
+                        <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-dark'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bxs-cart bx-sm text-dark'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bx-user bx-sm text-dark'></i></a>
+                        <!--	https://iconify.design/icon-sets/bx/-->
+                    </div>
+                </div>
+            </div>
+    </nav>
+        <!----------------------------------------------------------- Fin de los iconos del menu y Nav-->
+    <!-- Close Header -->
+
+    <!-- Start Banner Hero -->
+    <section class="bg-light w-100 semi-bold-600">
+        <div class="container">
+            <div class="row d-flex align-items-center py-5">
+                <div class="text-start">
+                    <h1 class="h2 py-5 text-black typo-space-line">Conocé nuestros Precios</h1>
+                    <p class="light-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure laboriosam quis mollitia voluptatibus. Impedit, nam!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Hero -->
+
+    <!-- Start Pricing Horizontal Section -->
+    <section class="pt-sm-0 py-0">
+        <div class="container py-5">
+             <!-- Start Product List Section -->
+            <div class="p-4">
+                
+                <!-- Start Variedad de Mani Section -->
+                <div id="section-variedad-de-mani" class="container-lg">
+                    <div class="col-md-12 m-auto text-center py-2">
+                        <h1 class="pricing-header h2 semi-bold-600">Variedad de Maní</h1>
+                        <h2 class="pricing-header h5 light-300"> << Deslice para ver más >> </h1>
+                    </div>
+                </div>   
+                
+
+                <div class="prueba1 bg-dark shadow"> 
+                   
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/mani-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$200<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/mani-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$200<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/mani-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$200<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/mani-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$200<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/mani-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$200<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/mani-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$200<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                       
+                    <!--  <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0  semi-bold-600">Frutos secos</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$650<small class="text-muted fw-light">/Kg</small></h1>
+                            <img class="service card-img py-2" src="./assets/img/services-01.jpg" alt="Card image">
+                            <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                        </div>
+                    </div> -->
+
+                </div>  
+                <!-- End Variedad de Mani Section -->
+
+
+                <!-- Start Frutos Secos Section -->
+                <div id="section-frutos-secos" class="container-lg pt-2">
+                    <div class="col-md-12 m-auto text-center py-2">
+                        <h1 class="pricing-header h3 semi-bold-600">Frutos Secos</h1>
+                        <h2 class="pricing-header h5 light-300"> << Deslice para ver más >> </h1>
+                    </div>
+                </div>    
+                
+                <div class="prueba1 bg-dark shadow"> 
+                   
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/frutos-secos-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$650<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/frutos-secos-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$650<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/frutos-secos-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$650<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/frutos-secos-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$650<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> 
+                <!-- End Frutos Secos Section -->
+
+                <!-- Start Snacks Section -->
+                <div id="section-snacks" class="container-lg pt-2">
+                    <div class="col-md-12 m-auto text-center py-2">
+                        <h1 class="pricing-header h3 semi-bold-600">Snacks</h1>
+                        <h2 class="pricing-header h5 light-300"> << Deslice para ver más >> </h1>
+                    </div>
+                </div>    
+                
+                <div class="prueba1 bg-dark shadow"> 
+                   
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/snacks-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$180<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/snacks-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$180<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/snacks-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$180<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/snacks-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$180<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                       
+                </div> 
+                <!-- End Snacks Section -->
+
+                <!-- Start Semillas Section -->
+                <div id="section-semillas" class="container-lg pt-2">
+                    <div class="col-md-12 m-auto text-center py-2">
+                        <h1 class="pricing-header h3 semi-bold-600">Semillas</h1>
+                        <h2 class="pricing-header h5 light-300"> << Deslice para ver más >> </h1>
+                    </div>
+                </div>    
+                
+                <div class="prueba1 bg-dark shadow"> 
+                    
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/semillas-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$125<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/semillas-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$125<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/semillas-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$125<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/semillas-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$125<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/semillas-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$125<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/semillas-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$125<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/semillas-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$125<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/semillas-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$125<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                        
+                </div> 
+                <!-- End Semillas Section -->
+
+                <!-- Start Harinas Section -->
+                <div id="section-harinas" class="container-lg pt-2">
+                    <div class="col-md-12 m-auto text-center py-2">
+                        <h1 class="pricing-header h3 semi-bold-600">Harinas</h1>
+                        <h2 class="pricing-header h5 light-300"> << Deslice para ver más >> </h1>
+                    </div>
+                </div>    
+                
+                <div class="prueba1 bg-dark shadow"> 
+                    
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/harinas-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$75<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/harinas-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$75<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/harinas-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$75<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/harinas-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$75<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-aa m-2">
+                        <div class="card shadow-sm py-2">
+                            <img class="service card-img py-2" src="./assets/img/productos/harinas-01.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$75<small class="text-muted fw-light">/Kg</small></h1>
+                                <hr>
+                                <div class="btn-group text-center">
+                                    <button type="button" class="btn btn-outline-dark"><i class='bx bxs-cart bx-sm text-dark'></i></a> Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                                        
+                </div> 
+                <!-- End Harinas Section -->
+                
+             </div>
+             <!-- End Product List Section -->
+        </div>
+    </section>
+    <!--End Pricing Horizontal Section-->
+
+    <!-- Start pricing -->
+    <div class="container-lg py-0">
+        <div class="col-md-12 m-auto text-center py-5">
+            <h1 class="pricing-header h2 semi-bold-600">Ofertas por Palet</h1>
+            <p class="pricing-footer">
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut facilisis.
+            </p>
+        </div>
+
+
+        <div class="row px-lg-3">
+
+
+            <div class="col-md-4 pb-5 pt-sm-0 mt-5 px-xl-3">
+                <div class="pricing-table card h-100 shadow-sm border-0 py-5">
+                    <div class="pricing-table-body card-body rounded-pill text-center align-self-center p-md-0">
+                        <i class="pricing-table-icon display-3 bx bx-package text-dark"></i>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Maní Salado</h2>
+                        <p>$7000</p>
+
+                        <div class="pricing-table-footer pt-5">
+                            <a href="#" class="btn rounded-pill px-4 btn-outline-light text-dark  light-300">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 pt-sm-0 pt-3 px-xl-3">
+                <div class="pricing-table card bg-dark h-100 card-rounded shadow-sm border-0 py-5">
+                    <div class="pricing-table-body card-body text-center text-white align-self-center p-md-0">
+                        <i class="pricing-table-icon display-3 bx bx-package text-white py-3"></i>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Nueces</h2>
+                        <p>$12000</p>
+                        <div class="pricing-table-footer pt-5 pb-2">
+                            <a href="#" class="btn rounded-pill px-4 btn-outline-light light-300">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 pb-5 pt-sm-0 mt-5 px-xl-3">
+                <div class="pricing-table card h-100 shadow-sm border-0 py-5">
+                    <div class="pricing-table-body card-body rounded-pill text-center align-self-center p-md-0">
+                        <i class="pricing-table-icon display-3 bx bx-package text-dark"></i>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Maní Salado</h2>
+                        <p>$7000</p>
+
+                        <div class="pricing-table-footer pt-5">
+                            <a href="#" class="btn rounded-pill px-4 btn-outline-light text-dark  light-300">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- End pricing -->
+
+    <!-- Start Pricing Campaing Marketing Section -->
+    <section class="container py-5">
+
+        <h1 class="h2 semi-bold-600 text-center pt-5">Precios Especiales Black Friday</h1>
+        <p class="text-center pb-5 light-300">
+            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut facilisis.
+        </p>
+
+        <div class="row d-flex align-items-center pb-2">
+
+            <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2">
+                <img class="rounded float-right" src="./assets/img/pricing.svg">
+            </div>
+
+            <div class="col-lg-6">
+
+                <!-- Start Pricing List -->
+                <div class="pricing-list shadow-sm rounded-top rounded-3 py-sm-0 py-5">
+                    <div class="row p-2">
+                        <div class="pricing-list-icon col-3 text-center m-auto text-dark ml-5 py-2">
+                            <i class="display-3 bx bx-package"></i>
+                        </div>
+                        <div class="pricing-list-body col-md-5 align-items-center pl-3 pt-2">
+                            <ul class="list-unstyled text-center light-300">
+                                <li class="h5 semi-bold-600 mb-0 mt-3">Harina De Arroz</li>
+                                <li>Precios especiales por bolsas de 5kg</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-list-footer col-4 text-center m-auto align-items-center">
+                            <a href="#" class="btn rounded-pill px-4 btn-dark light-300">$78</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Pricing List -->
+
+                <!-- Start Pricing List -->
+                <div class="pricing-list shadow-sm py-sm-0 py-5">
+                    <div class="row p-2">
+                        <div class="pricing-list-icon col-3 text-center m-auto text-dark ml-5 py-2">
+                            <i class="display-3 bx bx-package"></i>
+                        </div>
+                        <div class="pricing-list-body col-md-5 align-items-center pl-3 pt-2">
+                            <ul class="list-unstyled text-center light-300">
+                                <li class="h5 semi-bold-600 mb-0 mt-3">Maní Saborizado</li>
+                                <li>Precios especiales por bolsas de 25kg</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-list-footer col-sm-4 col-5 text-center m-auto align-items-center">
+                            <a href="#" class="btn rounded-pill px-4 btn-dark light-300">$165</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Pricing List -->
+
+                <!-- Start Pricing List -->
+                <div class="pricing-list shadow-sm rounded-botton rounded-3 py-sm-0 py-5">
+                    <div class="row p-2">
+                        <div class="pricing-list-icon col-sm-3 text-center m-auto text-dark ml-5 py-2">
+                            <i class="display-3 bx bx-package"></i>
+                        </div>
+                        <div class="pricing-list-body col-md-5 align-items-center pl-3 pt-2">
+                            <ul class="list-unstyled text-center light-300">
+                                <li class="h5 semi-bold-600 mb-0 mt-3">Sal del Himalaya</li>
+                                <li>Precios especiales por bolsas de 10kg</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-list-footer col-sm-4 col-5 text-center m-auto align-items-center">
+                            <a href="#" class="btn rounded-pill px-4 btn-dark light-300">$250</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Pricing List -->
+                <p class="text-center"><a class="btn px-4 mt-4 mx-auto btn-outline-dark" href="#">Consultas por otras ofertas</a></p>
+
+            </div>
+        </div>
+    </section>
+    <!-- Start Pricing Campaing Marketing Section -->
+
+    <!-- Start Wapp Btn -->
+    <div class="btn-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=543816428818&text=Hola,%20me%20pasas%20lista%20de%20precios?" target="_blank">
+        <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
+        </a>
+    </div>
+    <!-- End Wapp Btn -->
+
+    <!-- Start Footer -->
+    <footer class="bg-light pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/img/icono.png" height="40" alt="Card image">
+                        <span class="text-muted h5">Maní-</span><span class="text-muted h5 semi-bold-600">Pirané</span>
+                    </a>
+                    <p class="text-muted my-lg-4 my-2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut.
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-muted" target="_blank" href="https://www.youtube.com/">
+                                <i class='bx bxl-youtube bx-md' ></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-muted" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-circle bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-muted" target="_blank" href="https://www.instagram.com/manipirane/">
+                                <i class='bx bxl-instagram-alt bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-muted" target="_blank" href="https://www.linkedin.com/">
+                                <i class='bx bxl-linkedin bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-muted" target="_blank" href="https://api.whatsapp.com/send?phone=543816428818&text=Hola,%20me%20pasas%20lista%20de%20precios?">
+                                <i class='bx bxl-whatsapp bx-md'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-muted light-300">Mapa del Sitio</h2>
+                        <ul class="list-unstyled text-muted light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted" 
+								href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-muted py-1" 
+								href="pricing.html">Precios</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+								href="work.html">Clientes</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+								href="about.html">Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+								href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-muted light-300">Productos</h2>
+                    <ul class="list-unstyled text-muted light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+							href="pricing.html#section-variedad-de-mani">Variedad Maní</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+							href="pricing.html#section-frutos-secos">Frutos Secos</a>
+                        <li class="pb-2">       
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+							href="pricing.html#section-snacks">Snacks</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+							href="pricing.html#section-semillas">Semillas</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+							href="pricing.html#section-harinas">Harinas</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-muted light-300">Comunicate</h2>
+                    <ul class="list-unstyled text-muted light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-muted py-1" 
+							href="tel:+54-3815512745">+54-3815512745</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-muted py-1"
+							href="mailto:info@company.com">manipirane@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-light py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-muted light-300">
+                            © Copyright 2021 Maní-Pirané. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-muted light-300">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-muted" 
+							href="#" target="_blank"><strong>Esteban Agüero</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
